@@ -19,7 +19,9 @@ El proyecto aborda el desafío de la variabilidad instrumental mediante la compa
 Para ejecutar este cuaderno, necesitas un entorno de Python 3 con las siguientes librerías instaladas:
 
 
-**``pip install pandas numpy matplotlib scikit-learn xgboost scipy ```**
+```bash
+pip install pandas numpy matplotlib scikit-learn xgboost scipy 
+```
 
 
 El enlace de kaggle para obtener los datos usados es: https://www.kaggle.com/competitions/dig-4-bio-raman-transfer-learning-challenge/data
