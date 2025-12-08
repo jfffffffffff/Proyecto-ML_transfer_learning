@@ -8,7 +8,7 @@ Ejecuta esto en tu terminal o celda de instalación:Bashpip install pandas numpy
 
 **Instrucciones Rápidas**
 **Archivos:** 
-Necesitas el notebook borrar.ipynb y los 8 CSVs de datos (anton_532.csv, kaiser.csv, tornado.csv, etc.).
+Necesitas el notebook Proyecto-ML_transfer_learning.ipynb y los 8 CSVs de datos (anton_532.csv, kaiser.csv, tornado.csv, etc.).
 
 **Rutas:** Si no usas Google Colab, cambia las rutas de los archivos en la segunda celda (file_paths) a tu carpeta local.
 Ejecución: Corre todas las celdas ("Run All"). El código se encarga de limpiar, entrenar y validar automáticamente.
