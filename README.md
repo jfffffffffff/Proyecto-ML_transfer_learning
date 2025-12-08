@@ -17,4 +17,4 @@ Ejecución: Corre todas las celdas ("Run All"). El código se encarga de limpiar
 **Comparativa:** 
 * Tabla de rendimiento ($R^2$ y Error) entre PLS y XGBoost.
 * Gráficas de Predicción: Dispersión de valores Reales vs. Predichos.
-*Importancia de Variables: Gráfico de coeficientes que muestra qué longitudes de onda usa el modelo para detectar cada sustancia.
+* Importancia de Variables: Gráfico de coeficientes que muestra qué longitudes de onda usa el modelo para detectar cada sustancia.
