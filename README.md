@@ -1,20 +1,22 @@
-# Proyecto-ML_transfer_learning
+#  Predicción de Metabolitos en Bioprocesos con Espectroscopía Raman
 
-**Predicción de Metabolitos con Espectroscopía Raman (PLS & XGBoost)**
-Este notebook implementa un flujo de trabajo para predecir concentraciones de Glucosa, Acetato y Sulfato de Magnesio unificando datos de 8 espectrómetros diferentes.
+Este repositorio contiene un flujo de trabajo en **Jupyter Notebook** para el análisis y modelado de datos espectrales Raman. El objetivo principal es predecir la concentración de metabolitos críticos (**Glucosa**, **Acetato de Sodio** y **Sulfato de Magnesio**) en cultivos celulares, utilizando datos provenientes de múltiples espectrómetros.
 
-**Requisitos**
-Ejecuta esto en tu terminal o celda de instalación:Bashpip install pandas numpy matplotlib scikit-learn xgboost scipy
+El proyecto aborda el desafío de la variabilidad instrumental mediante la comparación de modelos lineales (**PLS**) y no lineales (**XGBoost**), optimizados para generalizar a través de diferentes dispositivos.
 
-**Instrucciones Rápidas**
-**Archivos:** 
-Necesitas el notebook Proyecto-ML_transfer_learning.ipynb y los 8 CSVs de datos (anton_532.csv, kaiser.csv, tornado.csv, etc.).
+## Contenido del Repositorio
 
-**Rutas:** Si no usas Google Colab, cambia las rutas de los archivos en la segunda celda (file_paths) a tu carpeta local.
-Ejecución: Corre todas las celdas ("Run All"). El código se encarga de limpiar, entrenar y validar automáticamente.
+* **`borrar.ipynb`**: El cuaderno principal que contiene todo el pipeline: carga de datos, preprocesamiento, entrenamiento de modelos, validación y visualización. *(Nota: Se recomienda renombrar este archivo a algo más descriptivo como `analisis_espectral.ipynb`)*.
+* **Archivos de datos (`.csv`)**: (Estos archivos deben estar en la ruta especificada en el notebook):
+    * `anton_532.csv`, `anton_785.csv`
+    * `kaiser.csv`
+    * `metrohm.csv`
+    * `mettler_toledo.csv`
+    * `tec5.csv`, `timegate.csv`, `tornado.csv`
 
-**Resultados que obtendrás**
-**Comparativa:** 
-* Tabla de rendimiento ($R^2$ y Error) entre PLS y XGBoost.
-* Gráficas de Predicción: Dispersión de valores Reales vs. Predichos.
-* Importancia de Variables: Gráfico de coeficientes que muestra qué longitudes de onda usa el modelo para detectar cada sustancia.
+## Requisitos Previos
+
+Para ejecutar este cuaderno, necesitas un entorno de Python 3 con las siguientes librerías instaladas:
+
+```bash
+pip install pandas numpy matplotlib scikit-learn xgboost scipy
