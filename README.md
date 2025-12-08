@@ -1,4 +1,4 @@
-# 🧬 Predicción de Metabolitos en Bioprocesos con Espectroscopía Raman
+# Predicción de Metabolitos en Bioprocesos con Espectroscopía Raman
 
 Este repositorio contiene un flujo de trabajo en **Jupyter Notebook** para el análisis y modelado de datos espectrales Raman. El objetivo principal es predecir la concentración de metabolitos críticos (**Glucosa**, **Acetato de Sodio** y **Sulfato de Magnesio**) en cultivos celulares, utilizando datos provenientes de múltiples espectrómetros.
 
@@ -19,7 +19,8 @@ El proyecto aborda el desafío de la variabilidad instrumental mediante la compa
 Para ejecutar este cuaderno, necesitas un entorno de Python 3 con las siguientes librerías instaladas:
 
 ```bash
-pip install pandas numpy matplotlib scikit-learn xgboost scipy
+pip install pandas numpy matplotlib scikit-learn xgboost scipy ´´´
+
 
 El enlace de kaggle para obtener los datos usados es: https://www.kaggle.com/competitions/dig-4-bio-raman-transfer-learning-challenge/data
 
