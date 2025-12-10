@@ -14,6 +14,8 @@ El proyecto aborda el desafío de la variabilidad instrumental mediante la compa
     * `mettler_toledo.csv`
     * `tec5.csv`, `timegate.csv`, `tornado.csv`
 
+##Diagrama de bloques:assets/Diagrama de bloques.png 
+
 ## Requisitos Previos
 
 Para ejecutar este cuaderno, necesitas un entorno de Python 3 con las siguientes librerías instaladas:
