@@ -17,15 +17,15 @@ El proyecto aborda el desafío de la variabilidad instrumental mediante la compa
 ## Diagrama de bloques: assets/Diagrama de bloques.png 
 ```mermaid
 graph LR
-    %% Nodos y Estilos
-    A[<b>INPUT</b><br/>Espectros Raman<br/>8 Disp + Transfer]
-    B[<b>PRE-PROCESAMIENTO</b><br/>1. Intersección<br/>2. Interpolación<br/>3. Max-Norm]
-    C[<b>VALIDACIÓN</b><br/>Predefined Split]
-    D[<b>PLS Reg</b><br/>Grid: n_comp]
-    E[<b>XGBoost</b><br/>Grid: params]
-    F[<b>ENSAMBLE</b><br/>Blending 50/50]
-    G[<b>POST-PROC</b><br/>Clips < 0<br/>Outliers]
-    H((<b>OUTPUT FINAL</b><br/>Glucosa<br/>Acetato Na<br/>Sulfato Mg))
+    %% Nodos y Contenido
+    A("<b>INPUT</b><br/>Espectros Raman<br/>(8 Disp + Transfer)")
+    B("<b>PRE-PROCESAMIENTO</b><br/>1. Intersección<br/>2. Interpolación<br/>3. Max-Norm")
+    C("<b>VALIDACIÓN</b><br/>Predefined Split")
+    D("<b>PLS Reg</b><br/>Grid: n_comp")
+    E("<b>XGBoost</b><br/>Grid: params")
+    F("<b>ENSAMBLE</b><br/>Blending (50/50)")
+    G("<b>POST-PROC</b><br/>Clips < 0<br/>Outliers")
+    H([<b>OUTPUT FINAL</b><br/>Glucosa<br/>Acetato Na<br/>Sulfato Mg])
 
     %% Conexiones
     A --> B
@@ -37,12 +37,17 @@ graph LR
     F --> G
     G --> H
 
-    %% Estilos opcionales para parecerse a tu imagen (Azul y blanco)
-    classDef blue fill:#1f55a8,stroke:#1f55a8,color:white;
-    classDef white fill:white,stroke:#1f55a8,color:#1f55a8,stroke-width:2px;
+    %% Definición de estilos (Colores)
+    %% Azul relleno con texto blanco
+    classDef blueBox fill:#1f55a8,stroke:#1f55a8,color:white,rx:5,ry:5;
     
-    class B,F blue;
-    class A,C,D,E,G,H white;
+    %% Blanco con borde azul y texto azul oscuro
+    classDef whiteBox fill:white,stroke:#1f55a8,color:#0e2a5c,stroke-width:2px,rx:5,ry:5;
+
+    %% Asignación de estilos a los nodos
+    class B,F blueBox;
+    class A,C,D,E,G,H whiteBox;
+```
 ## Requisitos Previos
 
 Para ejecutar este cuaderno, necesitas un entorno de Python 3 con las siguientes librerías instaladas:
