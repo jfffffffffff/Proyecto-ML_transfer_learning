@@ -14,7 +14,7 @@ El proyecto aborda el desafío de la variabilidad instrumental mediante la compa
     * `mettler_toledo.csv`
     * `tec5.csv`, `timegate.csv`, `tornado.csv`
 
-##Diagrama de bloques:assets/Diagrama de bloques.png 
+## Diagrama de bloques: assets/Diagrama de bloques.png 
 
 ## Requisitos Previos
 
